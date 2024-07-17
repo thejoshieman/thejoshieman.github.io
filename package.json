@@ -48,7 +48,7 @@
     "@nightwatch/angular": "^3.1.1",
     "@nightwatch/mobile-helper": "^0.1.14",
     "@nightwatch/schematics": "^1.2.1",
-    "@swc/core": "^1.5.25",
+    "@swc/core": "^1.6.13",
     "@types/chai": "^4.3.16",
     "@types/cucumber": "^7.0.0",
     "@types/jasmine": "~5.1.4",

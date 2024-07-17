@@ -41,7 +41,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.1.0",
     "@angular/cli": "~18.1.0",
-    "@angular/compiler-cli": "^18.0.2",
+    "@angular/compiler-cli": "^18.1.0",
     "@angular/localize": "^18.0.2",
     "@cucumber/cucumber": "^10.8.0",
     "@cucumber/pretty-formatter": "^1.0.1",

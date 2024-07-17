@@ -14,8 +14,8 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['e2e','nightwatch'],
-
+  src_folders: ['e2e'],
+  output_folder: './integration-tests-report/',
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: [],
 
@@ -27,10 +27,10 @@ module.exports = {
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
   plugins: [],
-  
+
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
-  
+
   webdriver: {},
 
   test_workers: {
@@ -51,14 +51,14 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome'
       },
-      
+
       webdriver: {
         start_process: true,
         server_path: ''
       },
-      
+
     },
-    
+
     chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
@@ -66,9 +66,9 @@ module.exports = {
           // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
           args: [
             //'--no-sandbox',
-            //'--ignore-certificate-errors',
-            //'--allow-insecure-localhost',
-            //'--headless=new'
+            '--ignore-certificate-errors',
+            '--allow-insecure-localhost',
+            '--headless=new'
           ]
         }
       },
@@ -81,7 +81,7 @@ module.exports = {
         ]
       }
     },
-    
+
     'android.real.chrome': {
       desiredCapabilities: {
         real_mobile: true,
@@ -103,7 +103,7 @@ module.exports = {
           // androidDeviceSerial: ''
         },
       },
-    
+
       webdriver: {
         start_process: true,
         server_path: '',
@@ -135,7 +135,7 @@ module.exports = {
           // androidDeviceSerial: ''
         },
       },
-    
+
       webdriver: {
         start_process: true,
         // path to chromedriver executable which can work with the factory
@@ -146,7 +146,7 @@ module.exports = {
         ]
       }
     },
-    
+
   },
-  
+
 };

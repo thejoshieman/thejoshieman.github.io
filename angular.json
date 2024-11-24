@@ -16,12 +16,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "public/thejoshieman.github.io",
+            "outputPath": {
+              "base": "public/thejoshieman.github.io"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
@@ -38,11 +41,11 @@
                 "input": "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
                 "inject": false
               }
-            ]
+            ],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
-              "buildOptimizer": true,
               "optimization": true,
               "budgets": [
                 {
@@ -65,9 +68,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": true,
               "optimization": true,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true

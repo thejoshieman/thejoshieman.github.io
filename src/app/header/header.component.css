@@ -26,13 +26,18 @@ body {
 }
 
 /* Blockquote header */
-.blockquote h1 {
+.blockquote h2 {
   position: relative;
   color: #ffffff;
   font-size: 40px;
   font-weight: 800;
   line-height: 1;
   margin: 0;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 /* Blockquote right double quotes */
@@ -42,8 +47,8 @@ body {
   color: rgba(255, 255, 255, 1);
   font-size: 10rem;
   line-height: 0;
-  bottom: -43px;
-  right: 30px;
+  bottom: -0.2em;
+  right: 0.67em;
 }
 
 /* increase header size after 600px */
@@ -55,10 +60,12 @@ body {
 
 /* Blockquote subheader */
 .blockquote h4 {
+  right: -4em;
   position: relative;
-  color: #2b3f52;
+  color: #2b3f52b9;
   font-size: 1rem;
-  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
   line-height: 1;
   margin: 0;
   padding-top: 20px;

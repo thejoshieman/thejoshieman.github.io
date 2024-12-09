@@ -1,11 +1,14 @@
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+/* Grid changes on medium sized screens */
+@media screen and (min-width: 300px) {
+  .sidenav {
+    padding-left: 10em;
+  }
+}
+
+/* Grid changes again on larger screens */
+@media screen and (min-width: 1000px) {
+  .sidenav {
+    padding-bottom: 10em;
+    padding-left: 1em;
+  }
 }

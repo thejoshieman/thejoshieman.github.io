@@ -1,11 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-left',
+  selector: "app-left",
   imports: [],
-  templateUrl: './left.component.html',
-  styleUrl: './left.component.css'
+  templateUrl: "./left.component.html",
+  styleUrl: "./left.component.css",
 })
-export class LeftComponent {
-
-}
+export class LeftComponent {}

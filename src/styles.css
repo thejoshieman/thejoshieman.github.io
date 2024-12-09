@@ -17,20 +17,59 @@
 }
 
 .grid-wrapper {
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-  'header header header header header header'
-  'menu left left right right right'
-  'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  background-color: #2196f3;
   background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
   background-size: 600% 600%;
   -webkit-animation: AnimationName 24s ease infinite;
   -moz-animation: AnimationName 24s ease infinite;
   animation: AnimationName 24s ease infinite;
+}
+
+/* Grid changes on medium sized screens */
+@media screen and (min-width: 500px) {
+  .menu-content {
+    grid-area: menu;
+    font-weight: bold;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "header"
+      "menu"
+      "left"
+      "right"
+      "footer";
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+    background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 24s ease infinite;
+    -moz-animation: AnimationName 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+  }
+}
+
+/* Grid changes again on larger screens */
+@media screen and (min-width: 1000px) {
+  .grid-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "header header header header header header"
+      "menu left left right right right"
+      "menu footer footer footer footer footer";
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+    background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 24s ease infinite;
+    -moz-animation: AnimationName 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+  }
 }
 
 @-webkit-keyframes AnimationName {
@@ -69,13 +108,21 @@
 
 @font-face {
   font-family: ShootingStar;
-  src: url("assets/Shooting\ Star.ttf") format('truetype');
+  src: url("assets/Shooting\ Star.ttf") format("truetype");
   font-weight: bold;
 }
 
+@font-face {
+  font-family: MoreSugar;
+  src: url("assets/MoreSugar-Thin.ttf") format("truetype");
+}
 
-  h1, h2, h3 {
-      font-family: ShootingStar;
-  }
+h1,
+h2,
+h3 {
+  font-family: ShootingStar;
+}
 
-  
+a {
+  font-family: MoreSugar;
+}

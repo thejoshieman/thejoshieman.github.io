@@ -10,6 +10,7 @@ import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { MenuComponent } from "./menu/menu.component";
 import { LeftComponent } from "./left/left.component";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,13 @@ import { LeftComponent } from "./left/left.component";
 
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MenuComponent, LeftComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MenuComponent,
+    LeftComponent,
+    RouterModule,
+  ],
   exports: [],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],

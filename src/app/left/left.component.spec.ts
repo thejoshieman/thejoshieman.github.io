@@ -8,7 +8,7 @@ describe("LeftComponent", () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [LeftComponent]
+      imports: [LeftComponent],
     });
     fixture = TestBed.createComponent(LeftComponent);
     component = fixture.componentInstance;

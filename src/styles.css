@@ -28,7 +28,7 @@
       "header"
       "menu"
       "left"
-      "right"
+      "media"
       "footer";
     grid-gap: 10px;
     background-color: #2196f3;
@@ -65,7 +65,7 @@
     gap: 10px;
     grid-template-areas:
       "header header header header header header"
-      "menu left left left left media"
+      "menu left left left media media"
       "footer footer footer footer footer footer";
     grid-gap: 10px;
     background-color: #2196f3;
@@ -129,12 +129,9 @@ h3 {
   font-family: ShootingStar;
 }
 
-
 a {
   font-family: MoreSugar;
 }
-
-
 
 /* Grid changes on medium sized screens */
 @media screen and (min-width: 300px) {

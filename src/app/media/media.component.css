@@ -5,9 +5,9 @@
     min-width: auto;
     max-width: 100%;
     text-align: center;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5;
+    padding-left: 0.5;
+    padding-bottom: 0.5;
   }
   .wrapper {
     justify-content: center;
@@ -23,9 +23,9 @@
     min-width: auto;
     text-align: center;
     max-width: 100%;
-    padding-top: 3em;
-    padding-left: 3em;
-    padding-bottom: 3em;
+    padding-top: 0.5;
+    padding-left: 0.5;
+    padding-bottom: 0.5;
   }
   .wrapper {
     background: rgba(0, 135, 0, 0.1);

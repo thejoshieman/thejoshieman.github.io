@@ -1,10 +1,4 @@
-.header-content {
-  grid-area: header;
-  grid-column-start: 1;
-  grid-column-end: 7;
-  text-align: center;
-  margin-top: 1.5%;
-}
+
 
 .menu-content {
   grid-area: menu;
@@ -26,7 +20,14 @@
 }
 
 /* Grid changes on medium sized screens */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 300px) {
+  .header-content {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    padding-top: 1em;
+  }
   .menu-content {
     grid-area: menu;
     font-weight: bold;
@@ -54,6 +55,13 @@
 
 /* Grid changes again on larger screens */
 @media screen and (min-width: 1000px) {
+  .header-content {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-align: center;
+    padding-top: 5em;
+  }
   .grid-wrapper {
     display: grid;
     gap: 10px;

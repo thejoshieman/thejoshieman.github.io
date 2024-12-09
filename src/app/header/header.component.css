@@ -52,9 +52,9 @@ body {
 }
 
 /* increase header size after 600px */
-@media all and (min-width: 600px) {
-  .blockquote h1 {
-    font-size: 60px;
+@media all and (min-width: 300px) {
+  .blockquote h2 {
+    font-size: 1.5em;
   }
 }
 
@@ -70,4 +70,12 @@ body {
   margin: 0;
   padding-top: 20px;
   z-index: 1;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 300px) {
+  .blockquote h4 {
+    right: -1em;
+    font-size: 0.75em;
+  }
 }

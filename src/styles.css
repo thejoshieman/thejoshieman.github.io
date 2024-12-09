@@ -1,81 +1,6 @@
-.grid-wrapper {
-  background-color: #2196f3;
-  background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 24s ease infinite;
-  -moz-animation: AnimationName 24s ease infinite;
-  animation: AnimationName 24s ease infinite;
-}
-
-/* Grid changes on medium sized screens */
-@media screen and (min-width: 300px) {
-  .header-content {
-    grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    text-align: center;
-    padding-top: 1em;
-  }
-  .menu-content {
-    grid-area: menu;
-    font-weight: bold;
-  }
-
-  .grid-wrapper {
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-      "header"
-      "menu"
-      "left"
-      "media"
-      "footer";
-    grid-gap: 10px;
-    background-color: #2196f3;
-    padding: 10px;
-    background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 24s ease infinite;
-    -moz-animation: AnimationName 24s ease infinite;
-    animation: AnimationName 24s ease infinite;
-  }
-}
-
-/* Grid changes again on larger screens */
-@media screen and (min-width: 1000px) {
-  .menu-content {
-    grid-area: menu;
-  }
-  .left-content {
-    grid-area: left;
-  }
-  .footer-content {
-    grid-area: footer;
-  }
-
-  .header-content {
-    grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    text-align: center;
-    padding-top: 5em;
-  }
-  .grid-wrapper {
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-      "header header header header header header"
-      "menu left left left media media"
-      "footer footer footer footer footer footer";
-    grid-gap: 10px;
-    background-color: #2196f3;
-    padding: 10px;
-    background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 24s ease infinite;
-    -moz-animation: AnimationName 24s ease infinite;
-    animation: AnimationName 24s ease infinite;
-  }
+body,
+html {
+  background-color: #003cff27;
 }
 
 @-webkit-keyframes AnimationName {
@@ -135,30 +60,111 @@ a {
 
 /* Grid changes on medium sized screens */
 @media screen and (min-width: 300px) {
+  .header-content {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    padding-top: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-content {
+    grid-area: menu;
+    font-weight: bold;
+  }
+
+  .grid-wrapper {
+    float: right;
+    display: grid;
+    gap: 1em;
+    grid-template-areas:
+      "header"
+      "menu"
+      "left"
+      "media"
+      "footer";
+    grid-gap: 0.5em;
+    padding: 0.5em;
+    width: 100vw;
+    height: 100vh;
+  }
   h2 {
     text-align: left;
   }
   .wrapper {
-    justify-content: left;
+    justify-content: center;
     background: rgba(0, 135, 0, 0.1);
+    max-width: 80%;
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
+  }
+  img {
+    flex: auto;
+    min-width: auto;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0.5;
+    padding-left: 0.5;
+    padding-bottom: 0.5;
   }
 }
 
 /* Grid changes again on larger screens */
 @media screen and (min-width: 1000px) {
-  h2 {
+  .header-content {
+    grid-area: header;
+    text-align: center;
+    padding-top: 1em;
+  }
+  .menu-content {
+    grid-area: menu;
+  }
+  .left-content {
+    grid-area: left;
+  }
+  .footer-content {
+    grid-area: footer;
+  }
+  .media-content {
+    grid-area: media;
+  }
+  .header-content {
+    grid-area: header;
+    grid-column-start: 2;
+    grid-column-end: 5;
     text-align: center;
   }
-  .wrapper {
+  .grid-wrapper {
+    display: grid;
+    position: relative;
+    margin: auto;
+    gap: 1em;
+    grid-template-areas:
+      " header header header header header"
+      " menu left left left media"
+      " footer footer footer footer footer";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: flex-start;
+    padding: 1em;
+    width: 100vw;
+    height: 100vh;
+  }
+  img {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .media-wrapper {
     justify-content: center;
     background: rgba(0, 135, 0, 0.1);
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-top: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
   }
 }

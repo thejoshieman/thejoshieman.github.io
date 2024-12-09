@@ -1,20 +1,3 @@
-.header-content {
-  grid-area: header;
-  grid-column-start: 1;
-  grid-column-end: 7;
-  text-align: center;
-  margin-top: 1.5%;
-}
-
-.menu-content {
-  grid-area: menu;
-}
-.left-content {
-  grid-area: left;
-}
-.footer-content {
-  grid-area: footer;
-}
 
 .grid-wrapper {
   background-color: #2196f3;
@@ -26,7 +9,14 @@
 }
 
 /* Grid changes on medium sized screens */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 300px) {
+  .header-content {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    padding-top: 1em;
+  }
   .menu-content {
     grid-area: menu;
     font-weight: bold;
@@ -54,12 +44,32 @@
 
 /* Grid changes again on larger screens */
 @media screen and (min-width: 1000px) {
+
+
+
+.menu-content {
+  grid-area: menu;
+}
+.left-content {
+  grid-area: left;
+}
+.footer-content {
+  grid-area: footer;
+}
+
+  .header-content {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-align: center;
+    padding-top: 5em;
+  }
   .grid-wrapper {
     display: grid;
     gap: 10px;
     grid-template-areas:
       "header header header header header header"
-      "menu left left right right right"
+      "menu left right right right right"
       "menu footer footer footer footer footer";
     grid-gap: 10px;
     background-color: #2196f3;

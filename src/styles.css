@@ -1,14 +1,16 @@
 .header-content {
   grid-area: header;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 7;
+  text-align: center;
+  margin-top: 1.5%;
 }
 
 .menu-content {
   grid-area: menu;
 }
-.main-content {
-  grid-area: main;
+.left-content {
+  grid-area: left;
 }
 .footer-content {
   grid-area: footer;
@@ -16,14 +18,16 @@
 
 .grid-wrapper {
   display: grid;
-  grid-template-areas:
-    ". header header"
-    "menu main main"
-    "menu footer footer ";
   gap: 10px;
+  grid-template-areas:
+  'header header header header header header'
+  'menu left left right right right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
   background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
   background-size: 600% 600%;
-
   -webkit-animation: AnimationName 24s ease infinite;
   -moz-animation: AnimationName 24s ease infinite;
   animation: AnimationName 24s ease infinite;
@@ -62,3 +66,16 @@
     background-position: 0% 9%;
   }
 }
+
+@font-face {
+  font-family: ShootingStar;
+  src: url("assets/Shooting\ Star.ttf") format('truetype');
+  font-weight: bold;
+}
+
+
+  h1, h2, h3 {
+      font-family: ShootingStar;
+  }
+
+  

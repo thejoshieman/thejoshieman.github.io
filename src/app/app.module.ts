@@ -8,8 +8,8 @@ import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
-import { HTTP_INTERCEPTORS } from "@angular/common/http";
 import { MenuComponent } from "./menu/menu.component";
+import { LeftComponent } from "./left/left.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { MenuComponent } from "./menu/menu.component";
 
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MenuComponent],
+  imports: [BrowserModule, AppRoutingModule, MenuComponent, LeftComponent],
   exports: [],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],

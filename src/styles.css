@@ -1,15 +1,4 @@
 
-
-.menu-content {
-  grid-area: menu;
-}
-.left-content {
-  grid-area: left;
-}
-.footer-content {
-  grid-area: footer;
-}
-
 .grid-wrapper {
   background-color: #2196f3;
   background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
@@ -55,6 +44,19 @@
 
 /* Grid changes again on larger screens */
 @media screen and (min-width: 1000px) {
+
+
+
+.menu-content {
+  grid-area: menu;
+}
+.left-content {
+  grid-area: left;
+}
+.footer-content {
+  grid-area: footer;
+}
+
   .header-content {
     grid-area: header;
     grid-column-start: 1;

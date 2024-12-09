@@ -1,0 +1,17 @@
+.creatorsig {
+  float: left;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.493);
+  font-weight: 600;
+  font-family: MoreSugar;
+  font-size: smaller;
+}
+
+.github {
+  float: right;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.493);
+  font-weight: 600;
+  font-family: MoreSugar;
+  font-size: smaller;
+}

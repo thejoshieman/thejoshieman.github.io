@@ -1,17 +1,47 @@
-.creatorsig {
-  float: left;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.493);
-  font-weight: 600;
-  font-family: MoreSugar;
-  font-size: smaller;
+
+/* Grid changes on medium sized screens */
+@media screen and (min-width: 300px) {
+  .creatorsig {
+    float: right;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.493);
+    font-weight: 600;
+    font-family: MoreSugar;
+    font-size: smaller;
+    padding-top: 1em;
+  }
+  
+  .github {
+    float: right;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.493);
+    font-weight: 600;
+    font-family: MoreSugar;
+    font-size: smaller;
+  }
+  
+  
 }
 
-.github {
-  float: right;
-  text-align: right;
-  color: rgba(0, 0, 0, 0.493);
-  font-weight: 600;
-  font-family: MoreSugar;
-  font-size: smaller;
+/* Grid changes again on larger screens */
+@media screen and (min-width: 1000px) {
+  .creatorsig {
+    float: left;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.493);
+    font-weight: 600;
+    font-family: MoreSugar;
+    font-size: smaller;
+  }
+  
+  .github {
+    float: right;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.493);
+    font-weight: 600;
+    font-family: MoreSugar;
+    font-size: smaller;
+  }
+  
+  
 }

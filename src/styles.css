@@ -70,7 +70,7 @@
     grid-template-areas:
       "header header header header header header"
       "menu left right right right right"
-      "menu footer footer footer footer footer";
+      "footer footer footer footer footer footer";
     grid-gap: 10px;
     background-color: #2196f3;
     padding: 10px;

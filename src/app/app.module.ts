@@ -9,8 +9,8 @@ import { AboutComponent } from "./about/about.component";
 import { HeaderComponent } from "./header/header.component";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { MenuComponent } from "./menu/menu.component";
-import { LeftComponent } from "./left/left.component";
 import { RouterModule } from "@angular/router";
+import { MediaComponent } from "./media/media.component";
 
 @NgModule({
   declarations: [
@@ -18,15 +18,14 @@ import { RouterModule } from "@angular/router";
     FooterComponent,
     HomeComponent,
     AboutComponent,
-
     HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MenuComponent,
-    LeftComponent,
     RouterModule,
+    MediaComponent,
   ],
   exports: [],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

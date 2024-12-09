@@ -1,4 +1,3 @@
-
 .grid-wrapper {
   background-color: #2196f3;
   background: linear-gradient(57deg, #b6ffec, #b6d3ff, #b4d2ff);
@@ -44,18 +43,15 @@
 
 /* Grid changes again on larger screens */
 @media screen and (min-width: 1000px) {
-
-
-
-.menu-content {
-  grid-area: menu;
-}
-.left-content {
-  grid-area: left;
-}
-.footer-content {
-  grid-area: footer;
-}
+  .menu-content {
+    grid-area: menu;
+  }
+  .left-content {
+    grid-area: left;
+  }
+  .footer-content {
+    grid-area: footer;
+  }
 
   .header-content {
     grid-area: header;
@@ -69,7 +65,7 @@
     gap: 10px;
     grid-template-areas:
       "header header header header header header"
-      "menu left right right right right"
+      "menu left left left left media"
       "footer footer footer footer footer footer";
     grid-gap: 10px;
     background-color: #2196f3;
@@ -133,6 +129,39 @@ h3 {
   font-family: ShootingStar;
 }
 
+
 a {
   font-family: MoreSugar;
+}
+
+
+
+/* Grid changes on medium sized screens */
+@media screen and (min-width: 300px) {
+  h2 {
+    text-align: left;
+  }
+  .wrapper {
+    justify-content: left;
+    background: rgba(0, 135, 0, 0.1);
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+/* Grid changes again on larger screens */
+@media screen and (min-width: 1000px) {
+  h2 {
+    text-align: center;
+  }
+  .wrapper {
+    justify-content: center;
+    background: rgba(0, 135, 0, 0.1);
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+  }
 }

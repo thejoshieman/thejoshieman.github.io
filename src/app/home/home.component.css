@@ -1,4 +1,21 @@
 p {
   font-family: MoreSugar;
   font-style: italic;
+  color: rgba(0, 0, 0, 0.527);
+  font-weight: 600;
+}
+
+/* Grid changes on medium sized screens */
+@media screen and (min-width: 300px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+/* Grid changes again on larger screens */
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    background: rgba(0, 135, 0, 0.1);
+    top: 0;
+  }
 }

@@ -24,3 +24,7 @@ a {
 .active-route::after {
   content: " (current)";
 }
+
+.menu-label {
+  min-width: 24vh;
+}

@@ -23,8 +23,9 @@
 /* Grid changes again on larger screens */
 @media screen and (min-width: 1000px) {
   .creatorsig {
+    position: relative;
+    bottom: -1em;
     float: left;
-    text-align: left;
     color: rgba(0, 0, 0, 0.493);
     font-weight: 600;
     font-family: MoreSugar;
@@ -32,11 +33,17 @@
   }
 
   .github {
-    float: right;
-    text-align: right;
+    left: -2em;
+    bottom: -2em;
+    position: relative;
     color: rgba(0, 0, 0, 0.493);
     font-weight: 600;
     font-family: MoreSugar;
     font-size: smaller;
+  }
+  .footer-wrapper {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
   }
 }

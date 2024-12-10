@@ -6,23 +6,21 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .sidenav {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
-
 a {
   text-align: left;
-  font-size: 1em;
   font-weight: bold;
   color: rgba(43, 46, 226, 0.534);
   text-decoration: none;
+  font-family: MoreSugar;
 }
 
 .active-route {
+  text-align: left;
   text-decoration: underline !important;
-  font-weight: bolder !important;
-  font-size: 1.25em !important;
+  font-weight: bold !important;
+  color: rgba(43, 46, 226, 0.842);
+}
+
+.active-route::after {
+  content: " (current)";
 }

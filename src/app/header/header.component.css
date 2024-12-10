@@ -1,8 +1,3 @@
-body {
-  background-color: #52acff;
-  background-image: linear-gradient(180deg, #52acff 25%, #ffe32c 100%);
-}
-
 .blockquote-wrapper {
   display: flex;
   padding: 0 2em;

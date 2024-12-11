@@ -21,6 +21,10 @@ module.exports = function (config) {
       },
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
+    junitReporter: {
+      outputDir: require("path").join(__dirname, "./coverage/thejoshieman/"),
+      outputFile: 'test-results.xml'
+  },
     coverageReporter: {
       dir: require("path").join(__dirname, "./coverage/thejoshieman/"),
       subdir: ".",

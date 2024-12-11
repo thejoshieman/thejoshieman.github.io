@@ -11,7 +11,7 @@
     "watch": "ng build --watch --configuration development",
     "deploy": "gh-pages -d build",
     "test": "ng test --watch false",
-    "coverage": "ng test --no-watch --code-coverage",
+    "coverage": "ng test --no-watch --code-coverage --browsers=ChromeHeadlessCI",
     "e2e": "nightwatch  -r ./e2e/html-reporter.js nightwatch.conf.js -e chrome",
     "e2e:firefox": "nightwatch -r e2e/html-reporter.js -c nightwatch.conf.js -e firefox",
     "e2e:safari": "nightwatch -r e2e/html-reporter.js -c nightwatch.conf.js -e safari",

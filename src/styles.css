@@ -107,7 +107,7 @@ body {
 }
 @font-face {
   font-family: ShootingStar;
-  src: url("assets/Shooting\ Star.ttf") format("truetype");
+  src: url("assets/ShootingStar.ttf") format("truetype");
   font-weight: bold;
 }
 

@@ -23,10 +23,10 @@ module.exports = function (config) {
     },
     coverageReporter: {
       dir: require("path").join(__dirname, "./coverage/thejoshieman/"),
-      subdir: ".",
-      reporters: [{ type: "junit" }, { type: "json" }],
+      subdir: "coverage-results/",
+      reporters: [{ type: "cobertura" }, { type: "text-summary" }],
     },
-    reporters: ["progress", "junit", "coverage"],
+    reporters: ["progress", "coverage"],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

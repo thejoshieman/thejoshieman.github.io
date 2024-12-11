@@ -22,4 +22,5 @@ jobs:
         if: always()
         with:
           files: |
-            coverage/thejoshieman/cobertura-coverage.xml
+            coverage/thejoshieman/coverage-final.json
+            *.xml

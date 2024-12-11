@@ -5,7 +5,7 @@ name: Node.js CI
 permissions:
   checks: write
   pull-requests: write
-  
+
 on:
   pull_request:
     branches: ["main", "release/*"]
@@ -25,5 +25,4 @@ jobs:
         if: always()
         with:
           files: |
-            coverage/thejoshieman/coverage-final.json
-            *.xml
+            coverage/thejoshieman/coverage-results/cobertura-coverage.xml

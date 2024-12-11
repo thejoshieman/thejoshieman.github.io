@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 131.0.0.0 (Linux x86_64)" package="" timestamp="2024-12-11T20:21:56" id="0" hostname="Magus-Desktop" tests="9" errors="0" failures="0" time="0.091">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36"/>
+  </properties>
+  <testcase name="HeaderComponent should create" time="0.036" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).HeaderComponent"/>
+  <testcase name="AppComponent should have as title 'thejoshieman Website'" time="0.011" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.003" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="FooterComponent should create" time="0.011" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).FooterComponent"/>
+  <testcase name="HomeComponent should create" time="0.005" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).HomeComponent"/>
+  <testcase name="MediaComponent should create" time="0.006" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).MediaComponent"/>
+  <testcase name="FaqComponent should create" time="0.007" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).FaqComponent"/>
+  <testcase name="AboutComponent should create" time="0.002" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).AboutComponent"/>
+  <testcase name="MenuComponent should create" time="0.01" classname="Chrome_Headless_131_0_0_0_(Linux_x86_64).MenuComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -21,12 +21,16 @@ module.exports = function (config) {
       },
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
+    junitReporter: {
+      outputDir: require("path").join(__dirname, "./coverage/thejoshieman/"),
+      outputFile: 'test-results.xml'
+  },
     coverageReporter: {
       dir: require("path").join(__dirname, "./coverage/thejoshieman/"),
-      subdir: "coverage-results/",
+      subdir: ".",
       reporters: [{ type: "cobertura" }, { type: "text-summary" }],
     },
-    reporters: ["progress", "coverage"],
+    reporters: ["progress", "junit", "coverage"],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

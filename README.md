@@ -1,1 +1,1 @@
-# Dan Harris's Website honoring The Joshie Man
+# Dan Harris's Website honoring The Joshie Man [![Code Coverage](https://github.com/thejoshieman/thejoshieman.github.io/actions/workflows/coverage.yml/badge.svg)](https://github.com/thejoshieman/thejoshieman.github.io/actions/workflows/coverage.yml)

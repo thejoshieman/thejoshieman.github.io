@@ -49,7 +49,7 @@
     "@nightwatch/schematics": "^1.2.1",
     "@swc/core": "^1.6.13",
     "@types/chai": "^5.0.1",
-    "@types/cucumber": "^7.0.0",
+    "@types/cucumber": "^7.0.3",
     "@types/jasmine": "~5.1.4",
     "@types/mocha": "^10.0.6",
     "@types/nightwatch": "3.0.1",

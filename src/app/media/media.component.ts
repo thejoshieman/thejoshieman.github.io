@@ -1,9 +1,9 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-media",
+  selector: 'app-media',
   imports: [],
-  templateUrl: "./media.component.html",
-  styleUrl: "./media.component.css",
+  templateUrl: './media.component.html',
+  styleUrl: './media.component.css',
 })
 export class MediaComponent {}

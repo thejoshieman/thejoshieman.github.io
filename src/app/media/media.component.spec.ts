@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MediaComponent } from "./media.component";
+import { MediaComponent } from './media.component';
 
-describe("MediaComponent", () => {
+describe('MediaComponent', () => {
   let component: MediaComponent;
   let fixture: ComponentFixture<MediaComponent>;
 
@@ -16,7 +16,7 @@ describe("MediaComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

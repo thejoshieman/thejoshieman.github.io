@@ -16,7 +16,7 @@ app.use(limiter);
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
-var distDir = __dirname + "/public/thejoshieman.com/browser/";
+var distDir = __dirname + "/public/thejoshieman.github.io/browser/";
 app.use(express.static(distDir));
 
 function getRoot(request, response) {

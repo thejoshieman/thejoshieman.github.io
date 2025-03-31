@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: '[app-root]',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: false,
 })
 export class AppComponent {
-  title = 'thejoshieman Website';
+  @Inject(DOCUMENT) document: Document;
+  constructor() {}
+  title = 'Snapdragon Website';
 }

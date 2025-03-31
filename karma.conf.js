@@ -14,7 +14,7 @@ module.exports = function (config) {
       clearContext: false,
     },
     junitReporter: {
-      outputDir: require("path").join(__dirname, "./coverage/usidiamond/"),
+      outputDir: require("path").join(__dirname, "./coverage/thejoshieman/"),
       outputFile: "test-results.xml",
     },
     reporters: ["progress", "junit", "coverage"],

@@ -1,49 +1,10 @@
-/* Grid changes on medium sized screens */
-@media screen and (min-width: 300px) {
-  .creatorsig {
-    float: right;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.493);
-    font-weight: 600;
-    font-family: MoreSugar;
-    font-size: smaller;
-    padding-top: 1em;
-  }
-
-  .github {
-    float: right;
-    text-align: right;
-    color: rgba(0, 0, 0, 0.493);
-    font-weight: 600;
-    font-family: MoreSugar;
-    font-size: smaller;
-  }
+a {
+  color: white;
 }
 
-/* Grid changes again on larger screens */
-@media screen and (min-width: 1000px) {
-  .creatorsig {
-    position: relative;
-    bottom: -1em;
-    float: left;
-    color: rgba(0, 0, 0, 0.493);
-    font-weight: 600;
-    font-family: MoreSugar;
-    font-size: smaller;
-  }
-
-  .github {
-    left: -2em;
-    bottom: -2em;
-    position: relative;
-    color: rgba(0, 0, 0, 0.493);
-    font-weight: 600;
-    font-family: MoreSugar;
-    font-size: smaller;
-  }
-  .footer-wrapper {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
-  }
+.github {
+  color: rgb(190, 190, 190);
+  font-weight: 600;
+  font-family: MoreSugar;
+  font-size: smaller;
 }

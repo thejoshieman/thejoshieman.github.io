@@ -1,26 +1,19 @@
-p {
+.content {
   font-family: MoreSugar;
   font-style: italic;
   font-weight: 700;
+  padding: 0.5em;
 }
 
 h2 {
   text-align: center;
   color: rgb(222, 187, 255);
+  padding-top: 1em;
 }
 
-.home-section {
-  padding: 0.75em;
-  margin: 1em;
+.section-backpane {
   font-family: MoreSugar;
   font-weight: 400;
   border-radius: 15px;
   background-color: rgba(0, 57, 107, 0.151);
-}
-
-.pronouns {
-  color: rgb(222, 187, 255);
-  font-style: normal;
-  font-size: large;
-  font-weight: bolder !important;
 }

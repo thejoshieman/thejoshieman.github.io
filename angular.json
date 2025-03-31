@@ -8,7 +8,7 @@
     }
   },
   "projects": {
-    "thejoshieman.github.io": {
+    "thejoshieman.com": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -19,7 +19,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "public/thejoshieman.github.io"
+              "base": "public/thejoshieman.com"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "thejoshieman.github.io:build:production"
+              "buildTarget": "thejoshieman.com:build:production"
             },
             "development": {
-              "buildTarget": "thejoshieman.github.io:build:development"
+              "buildTarget": "thejoshieman.com:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "thejoshieman.github.io:build"
+            "buildTarget": "thejoshieman.com:build"
           }
         },
         "test": {

@@ -16,7 +16,11 @@ app.use(limiter);
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
+<<<<<<< HEAD
 var distDir = __dirname + "/public/thejoshieman.github.io/browser/";
+=======
+var distDir = __dirname + "/public/thejoshieman.com/browser/";
+>>>>>>> main
 app.use(express.static(distDir));
 
 function getRoot(request, response) {

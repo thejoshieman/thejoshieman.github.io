@@ -1,30 +1,37 @@
-@media screen and (min-width: 300px) {
-  .sidenav {
-    padding-left: 1.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-  }
+li {
+  font-size: larger;
+  font-weight: bolder;
 }
 
-a {
-  text-align: left;
-  font-weight: bold;
-  color: rgba(43, 46, 226, 0.534);
-  text-decoration: none;
-  font-family: MoreSugar;
+.nav-link {
+  min-width: 170px !important;
 }
 
-.active-route {
-  text-align: left;
-  text-decoration: underline !important;
-  font-weight: bold !important;
-  color: rgba(43, 46, 226, 0.842);
+button {
+  text-align: start;
 }
 
-.active-route::after {
-  content: " (current)";
+button:not(.navbar-toggler) {
+  color: rgb(206, 154, 255) !important;
 }
 
-.menu-label {
-  min-width: 24vh;
+button:not(.navbar-toggler):not(.active):hover {
+  color: #0cf !important;
+}
+
+button:hover:not(.navbar-toggler):not(.active)::after {
+  content: " UwO";
+}
+
+button:not(.navbar-toggler):not(.active):focus {
+  color: #0cf !important;
+}
+
+button.active {
+  color: rgb(151, 39, 255) !important;
+}
+
+
+button.disabled {
+  color: rgba(222, 187, 255, 0.411) !important;
 }

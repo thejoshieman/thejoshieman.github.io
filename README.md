@@ -1,1 +1,2 @@
-# Dan Harris's Website honoring The Joshie Man [![Deploy static content to Pages](https://github.com/thejoshieman/thejoshieman.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/thejoshieman/thejoshieman.github.io/actions/workflows/deploy.yml)
+# thejoshieman.com
+Snapdragon Systems Mainpage

@@ -1,10 +1,10 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuComponent } from "./menu.component";
-import { RouterModule } from "@angular/router";
-import { routes } from "../app-routing.module";
+import { MenuComponent } from './menu.component';
+import { RouterModule } from '@angular/router';
+import { routes } from '../app-routing.module';
 
-describe("MenuComponent", () => {
+describe('MenuComponent', () => {
   let component: MenuComponent;
   let fixture: ComponentFixture<MenuComponent>;
 
@@ -18,7 +18,7 @@ describe("MenuComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

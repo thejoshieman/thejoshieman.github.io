@@ -1,19 +1,12 @@
-<a class="skip-to-content-link" href="#content"> Skip to content </a>
-<div class="grid-wrapper">
-  <div class="header-content" tabindex="0"><app-header></app-header></div>
-  <div class="menu-content" tabindex="0">
-    <app-menu></app-menu>
-  </div>
+<a
+  href="#"
+  target="_self"
+  onclick="event.preventDefault(); location.hash='maincontent';"
+  class="skip visually-hidden-focusable"
+  >Skip to main content</a
+>
 
-  <div class="left-content" id="content" tabindex="0">
-    <router-outlet></router-outlet>
-  </div>
-  <div class="media-content" tabindex="0">
-    <app-media>
-      <img
-        src="../assets/thejoshieman.webp"
-        alt="Picture of the joshieman sitting in a chair wearing a police hat."
-    /></app-media>
-  </div>
-  <div class="footer-content" tabindex="0"><app-footer></app-footer></div>
-</div>
+<header personal-header></header>
+<div menu></div>
+<router-outlet></router-outlet>
+<footer personal-footer></footer>

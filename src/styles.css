@@ -1,117 +1,13 @@
-h1,
-h2,
-h3 {
-  font-family: ShootingStar;
-}
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-/* Grid changes on medium sized screens */
-@media screen and (min-width: 300px) {
-  .header-content {
-    grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    text-align: center;
-    padding-top: 1em;
-    align-items: center;
-    justify-content: center;
-  }
-  .menu-content {
-    grid-area: menu;
-    font-weight: bold;
-  }
-
-  .grid-wrapper {
-    display: grid;
-    gap: 1em;
-    grid-template-areas:
-      "header"
-      "menu"
-      "left"
-      "media"
-      "footer";
-    grid-gap: 0.5em;
-    padding: 0.5em;
-    width: 100vw;
-    height: 100vh;
-  }
-  h2 {
-    text-align: left;
-  }
-  .wrapper {
-    justify-content: center;
-    background: rgba(0, 135, 0, 0.1);
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-  img {
-    flex: auto;
-    min-width: auto;
-    max-width: 100%;
-    text-align: center;
-    padding-top: 0.5;
-    padding-left: 0.5;
-    padding-bottom: 0.5;
-  }
+* {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(255, 255, 255);
 }
 
-/* Grid changes again on larger screens */
-@media screen and (min-width: 1000px) {
-  .header-content {
-    grid-area: header;
-    text-align: center;
-    padding-top: 1em;
-  }
-  .menu-content {
-    grid-area: menu;
-  }
-  .left-content {
-    grid-area: left;
-  }
-  .footer-content {
-    grid-area: footer;
-  }
-  .media-content {
-    grid-area: media;
-  }
-  .header-content {
-    grid-area: header;
-    text-align: center;
-  }
-  .grid-wrapper {
-    display: grid;
-    grid-template-areas:
-      " header header header header"
-      " menu menu menu menu "
-      " left left left media "
-      " footer footer footer footer ";
-    grid-gap: 1em;
-  }
-  img {
-    padding-top: 0.5em;
-    padding-left: 0.5em;
-    padding-bottom: 0.5em;
-  }
-  .media-wrapper {
-    justify-content: center;
-    background: rgba(0, 135, 0, 0.1);
-    padding-top: 0.25em;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-  }
-}
-@font-face {
-  font-family: ShootingStar;
-  src: url("assets/ShootingStar.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: MoreSugar;
-  src: url("assets/MoreSugar-Thin.ttf") format("truetype");
+main {
+  top: 0 !important ;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(300deg, #00aaff, #000000);
+  background-size: 120% 120%;
 }

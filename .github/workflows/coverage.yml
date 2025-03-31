@@ -27,4 +27,4 @@ jobs:
         if: always()
         with:
           files: |
-            coverage/usidiamond/**/test-results.xml
+            coverage/thejoshieman.github.io/**/test-results.xml

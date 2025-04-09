@@ -1,2 +1,2 @@
-# thejoshieman.com
-Snapdragon Systems Mainpage
+# thejoshieman.github.io
+Dan Harris's Site Honoring The Joshieman

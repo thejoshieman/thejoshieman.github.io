@@ -4,16 +4,13 @@ import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
-import { LinksComponent } from './home/links/links.component';
-import { AboutSectionComponent } from './about/about-section/about-section.component';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, HomeComponent, HeaderComponent],
+  declarations: [AppComponent, FooterComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,8 +20,6 @@ import { AboutSectionComponent } from './about/about-section/about-section.compo
       scrollPositionRestoration: 'enabled',
       enableViewTransitions: true,
     }),
-    LinksComponent,
-    AboutSectionComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [],

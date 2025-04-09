@@ -46,22 +46,14 @@ jobs:
           name: Static-Built-Site
           path: public/thejoshieman.github.io/browser
 
-  # Single deploy job since we're just deploying
+  # Deployment job
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
     environment:
       name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: Static-Built-Site
-          path: .
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v1
-        with:
-          path: .
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

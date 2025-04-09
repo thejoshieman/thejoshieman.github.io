@@ -17,8 +17,8 @@
     "e2e:safari": "nightwatch -r e2e/html-reporter.js -c nightwatch.conf.js -e safari",
     "e2e:edge": "nightwatch  -r e2e/html-reporter.js nightwatch.conf.js -e edge",
     "e2e:chrome": "nightwatch  -r e2e/html-reporter.js nightwatch.conf.js -e chrome",
-    "dockerBuild": "docker build -f Dockerfile -t thejoshieman.com .",
-    "dockerRun": "docker run  --env=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin --workdir=/ -p 8080:8080 --runtime=runc -d thejoshieman.com:latest"
+    "dockerBuild": "docker build -f Dockerfile -t thejoshieman.github.io .",
+    "dockerRun": "docker run  --env=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin --workdir=/ -p 8080:8080 --runtime=runc -d thejoshieman.github.io:latest"
   },
   "private": true,
   "dependencies": {

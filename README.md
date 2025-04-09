@@ -1,2 +1,2 @@
-# thejoshieman.com
+# thejoshieman.github.io
 Snapdragon Systems Mainpage
